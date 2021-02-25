@@ -5,9 +5,7 @@
 	<style type="text/css">
 		body{
 			margin: 0;
-			padding: 0;
-
-			
+			padding: 0;	
 		}
 		img{
 			height: 100vh;
@@ -19,11 +17,19 @@
 			background-image: url('komm.jpg');
 			display: flex;
 			justify-content: center;
-			
-
 		}
-		
 	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+<script>
+    var sound = new Howl({
+      src: ['anthem.MP3'],
+      volume: 0.5,
+      onend: function () {
+        alert('Finished!');
+      }
+    });
+    sound.play();
+</script>
 </head>
 <body>
 	<div class='ded'>
